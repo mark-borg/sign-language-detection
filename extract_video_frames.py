@@ -1,3 +1,8 @@
+"""
+    This script extracts video frames from downloaded YouTube videos.
+    Video frames are extracted at a rate of N frames every second and rescaled to the
+    given size (224x224 by default).
+"""
 import os
 import glob
 import math

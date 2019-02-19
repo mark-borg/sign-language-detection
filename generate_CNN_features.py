@@ -1,3 +1,10 @@
+"""
+    This script extracts CNN features for the given video frames,
+    MHI images, or frame differencing images.
+
+    Note that for optical flow data, the script generate_CNN_features_from_flow_data.py
+    should be used instead.
+"""
 import os
 import glob
 import msvcrt   # Microsoft specific

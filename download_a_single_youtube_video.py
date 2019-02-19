@@ -1,3 +1,6 @@
+"""
+    This script can be used to download a single YouTube video, given its URL.
+"""
 import urllib.parse as urlparse
 import pytube
 import argparse

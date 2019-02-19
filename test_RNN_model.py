@@ -1,3 +1,6 @@
+"""
+    Tests and evaluates an RNN on the test fold of the dataset.
+"""
 import argparse
 import gc
 import pytictoc

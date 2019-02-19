@@ -1,3 +1,10 @@
+"""
+    This script extracts video frames from downloaded YouTube videos, and computes
+    frame differencing on the extracted video frames.
+    Video frames are extracted at a rate of N frames every second and rescaled to the
+    given size (224x224 by default). The temporal distance between 2 difference video 
+    frames can be specified by the user.
+"""
 import os
 import glob
 import math

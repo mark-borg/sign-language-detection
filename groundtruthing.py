@@ -1,3 +1,8 @@
+"""
+    A simple tool to do basic groundtruthing of the video segments.
+    This is quite primitive, and needs further rework, including the ability to
+    correct errors during groundtruthing and move backwards.
+"""
 import os, glob
 import cv2
 import argparse

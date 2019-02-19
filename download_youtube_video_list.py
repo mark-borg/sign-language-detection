@@ -1,3 +1,9 @@
+"""
+    This script can be used to download a list of YouTube videos.
+    Must be given a file with the list of YouTube video URLs.
+    Adds a slight delay in between downloads so as to follow the terms and conditions
+    on call requests as specified by YouTube.
+"""
 import urllib.parse as urlparse
 import pytube
 import argparse
@@ -60,14 +66,14 @@ def download(video_urls_file, output_path, delay):
 
         except Exception as e:
             print("Exception: ", e)     # a regex exception probably means video is missing
-        
-        if msvcrt.kbhit():  # if a key is pressed 
+
+        if msvcrt.kbhit():  # if a key is pressed
             key = msvcrt.getch()
             if key == b'q' or key == b'Q':
                 print('User termination')
                 return
 
-        # YouTube's service agreement mentions a reasonable number of calls. We delay 
+        # YouTube's service agreement mentions a reasonable number of calls. We delay
         # a bit between each download so as not to fall foul of this condition.
         if downloaded:
             time.sleep(delay)       

@@ -1,3 +1,8 @@
+"""
+    This script splits a video into a number of video segments of fixed temporal duration.
+    If groundtruth is available, then this script will ensure that each video segment
+    contains frames having the same class label.
+"""
 import os
 import glob
 import argparse

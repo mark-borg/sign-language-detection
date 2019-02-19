@@ -1,3 +1,9 @@
+"""
+    This script extracts video frames from downloaded YouTube videos, and computes
+    optical fl on the extracted video frames.
+    Video frames are extracted at a rate of N frames every second and rescaled to the
+    given size (224x224 by default). 
+"""
 import os
 import numpy as np
 import glob

@@ -1,3 +1,8 @@
+"""
+    Support script to generate the t-SNE embeddings shown in the additional file.
+    We use the t-SNE embeddings to analyse the CNN features extracted at the fc1 or 
+    the fc2 layer of the VGG CNN.
+"""
 import os
 import random
 import glob

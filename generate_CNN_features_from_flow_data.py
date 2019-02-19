@@ -1,3 +1,6 @@
+"""
+    This script extracts CNN features for optical flow data.
+"""
 import os
 import glob
 import msvcrt   # Microsoft specific

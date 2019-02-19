@@ -1,3 +1,10 @@
+"""
+    This script extracts video frames from downloaded YouTube videos, and computes
+    motion history images (MHIs).
+    Video frames are extracted at a rate of N frames every second and rescaled to the
+    given size (224x224 by default). The MHI is constructed by stacking a number of the
+    extracted vidoe frames on top of each other.
+"""
 import os
 import math
 import time

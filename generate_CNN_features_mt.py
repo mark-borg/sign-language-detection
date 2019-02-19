@@ -1,3 +1,7 @@
+"""
+    This script performs the same task as generate_CNN_features.py, except that
+    it uses multiple threads to parallelise the operation of loading the data.
+"""
 import os
 import glob
 import msvcrt   # Microsoft specific

@@ -1,3 +1,11 @@
+"""
+    This script is used for training our RNN-based network.
+    For computational efficiency reasons, the extraction of CNN features
+    need to have been done before calling this script. Use one of the
+    generate_CNN_features*.py scripts for this.
+    Multiple RNNs are trained for different types of input data: raw
+    video frames, frame differencing images, MHIs, and optical flow data.
+"""
 import argparse
 import gc
 import pytictoc

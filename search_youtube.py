@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 
 """
-This Python script is given a search query term and it uses YouTube's API 
-to search for videos that are tagged with the given search term. 
-Videos belonging to YouTube Channels tagged with the given search term are 
-also included. But playlists are skipped, unless the playlists form part 
+This Python script is given a search query term and it uses YouTube's API
+to search for videos that are tagged with the given search term.
+Videos belonging to YouTube Channels tagged with the given search term are
+also included. But playlists are skipped, unless the playlists form part
 of a channel. The video URLs and titles are saved to a text file.
 
-Since YouTube's API is used, a developer key must be set up, as part of the 
+Since YouTube's API is used, a developer key must be set up, as part of the
 Google Cloud services account. Either set the value of the global variable
 YOUTUBE_API_DEVELOPER_KEY with your key value, or else save your key to a
 JSON file with name 'YOUTUBE_API_DEVELOPER_KEY.json' in the current folder.
 
-When using the YouTube API, please ensure that you are familiar with YouTube's 
-terms of service agreement, especially the part about making frequent repeated 
+When using the YouTube API, please ensure that you are familiar with YouTube's
+terms of service agreement, especially the part about making frequent repeated
 automated calls.
 """
 
@@ -155,7 +155,7 @@ def search_youtube(options):
                         print("Exception: ", e)
 
         except Exception as e:
-            print("Exception: ", e) 
+            print("Exception: ", e)
 
     f.close()
 

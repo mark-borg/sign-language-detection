@@ -1,3 +1,9 @@
+"""
+    This script creates our RNN-based neural network.
+    Since we do our processing in stages (due to memory limitations and to run on multiple machines), we can either create
+    the full network (CNN+RNN), or else just the convolutional base on its own (to extract image features and save them 
+    to disk), or the top part of the network (the RNN)
+"""
 import os
 from keras.models import Model, Sequential
 from keras.layers import Dropout, Flatten, Dense, LSTM, GRU, BatchNormalization, TimeDistributed, Bidirectional, MaxPool2D
