@@ -66,10 +66,6 @@ if __name__ == "__main__":
     argparser.add_argument("--model", help="File path and filename from where to load the trained SVM model", default="")
     args = argparser.parse_args()
 
-#-----------------------
-    args.validate = 'e:/sld/frames_cnnfc1_seg20_folds/5'
-    args.model = 'C:/1drv/OneDrive - Middlesex University/ml_datasets/sign language/svm.p'
-#-----------------------
     if not args.validate or not args.model:
         argparser.print_help()
         exit()

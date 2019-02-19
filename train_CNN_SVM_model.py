@@ -72,10 +72,6 @@ if __name__ == "__main__":
     argparser.add_argument("--model", help="File path and filename where to save the SVM model once it has been trained", default="")
     args = argparser.parse_args()
 
-#-----------------------
-    args.train = 'e:/sld/frames_cnnfc1_seg20_folds/1'
-    args.model = 'C:/1drv/OneDrive - Middlesex University/ml_datasets/sign language/svm.p'
-#-----------------------
     if not args.train or not args.model:
         argparser.print_help()
         exit()
